@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Information</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+      body{ background-color: #0b0f19;
+            color: #f0f3f8;
+            font-family: 'Orbitron', sans-serif;
+            padding: 50px 20px;
+            text-align: left;}
+
+img{width: 100%;
+            max-width: 900px;
+            max-height: 600px;
+            object-fit:cover;
+            display: block;
+            border-radius: 40px;
+            box-sizing: border-box;
+            margin: 20px auto;}
+
+ .links{display:flex;
+           gap:50px;
+           justify-content:center;}
+        
+          .link-box {display:flex;
+            align-items:center;
+            justify-content:center;
+            width:200px;
+            height:200px;}
+
+            .bordered-heading
+        {background-color: #344a74;
+        padding:10px;
+        display:inline-block;
+        border-radius:10px;}
+
+        .link-box:hover{animation: bounce 0.5s ease-in-out infinite alternate;background-color:#3c588b;border-radius:70px;}
+            @keyframes bounce{0% {transform:translateY(0px);}100%{transform:translateY(-10px);}}
+ li::marker{color:#2c58c7;}
+</style>
+
+<body>
+<div class="front">
+    <h1 class="bordered-heading">Why I Made this Website</h1>   
+        <p>I like space so this website will just be me being a space nerd. I'll also be taking AP Comp Sci, AP Enviromental Science, and planetary studies my senior year so this is also just me preparing! This is my first time coding anything, so here's <b>credits</b> to the reason why this website exists: 
+            <ul>
+                <li>w3schools</li>
+                <li>Various Youtube tutorials</li>
+                <li>Google</li>
+            </ul>
+        <p> Thanks for answering my dumb questions and thank whoever <i><b>you</b></i> are for reading :p</p>
+</div>
+<div class="moon phases">
+   <h2 class="bordered-heading">Moon Phases</h2>
+        <p>Here you go... Just <i>in case</i> you don't remember the <b>names</b> of each moon phase.</p>
+            <a href="https://griffithobservatory.lacity.gov/exhibits/ahmanson-hall-of-the-sky/moon-phases/"><img src="https://griffithobservatory.lacity.gov/wp-content/uploads/2021/03/moon_phases_uppergraphic-scaled.jpg"></a>
+</div>
+
+<div class="links">
+            <a href="moonphotos.html" class="link-box" ><img src="moonicon.png" alt="Moon Icon"></a>
+            <a href="starphotos.html" class="link-box"><img src="planeticon.png" alt="Planet Icon"></a>        
+            <a href="index.html" class="link-box" ><img src="Homescreen.PNG" alt="HOME Icon"></a>
+
+</body>
+
+
+
+
+
+
+            </html>

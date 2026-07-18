@@ -2,13 +2,12 @@
 <html>
     
      <head>
-        <title>Tracking the Moon 🌙 </title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    </head>
+            <title>Tracking the Moon 🌙 </title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+     </head>
 
-    <body>
         <style>
             body{ background-color: #0b0f19;
             color: #f0f3f8;
@@ -17,16 +16,52 @@
             text-align: center;}
 
             img{width: 100%;
-            max-width: 600px;
+            max-width: 900px;
+            max-height: 600px;
+            object-fit:cover;
+            border-radius: 40px;
             display: block;
+            box-sizing: border-box;
             margin: 20px auto;}
-        </style>
 
-        <h1 >Tracking Moon Pictures!</h1>
-        <p>Here you go.. Just <i>in case</i> you don't remember the <b>names</b> of each moon phase.</p>
-        <img src="https://griffithobservatory.lacity.gov/wp-content/uploads/2021/03/moon_phases_uppergraphic-scaled.jpg">
-        <a href="https://griffithobservatory.lacity.gov/exhibits/ahmanson-hall-of-the-sky/moon-phases/" >image source</a>
-    </body>
+          .links{display:flex;
+           gap:50px;
+           justify-content:center;}
+        
+          .link-box {display:flex;
+            align-items:center;
+            justify-content:center;
+            width:200px;
+            height:200px;}
+
+        .bordered-heading{background-color: #344a74;
+            padding:10px;
+            display:inline-block;
+            border-radius:10px;}
+
+        .link-box:hover{animation: bounce 0.5s ease-in-out infinite alternate;background-color:#3c588b;border-radius:70px;}
+            @keyframes bounce{0% {transform:translateY(0px);}100%{transform:translateY(-10px);}}
+    </style>
+
+ <body>
+
+        <div class="info">
+            <h1 class="bordered-heading">Tracking Moon Pictures!</h1>
+            <p style="font-size:20px"><b>Welcome to my website!</b></p>
+            <p style="font-size:16px"> Here, I plan on tracking my first attempts at planetary photography/posting interesting pictures of the moon... without a telescope!</p>
+            <p style="font: size 16PX;">One day I'll get one, and when I do, I'll make a seperate tab! For now, I'm blogging my skill with my phone ( &#10047;&#x25E0;&#x1D17;&#x25E0;)</p>
+       </div>
+
+     <div class="links">
+            <a href="moonphotos.html" class="link-box" ><img src="moonicon.png" alt="Moon Icon"></a>
+            <a href="starphotos.html" class="link-box"><img src="planeticon.png" alt="Planet Icon"></a>        
+            <a href="information.html" class="link-box" ><img src="information.PNG" alt="information Icon"></a>
+
+
+
+    </div>       
+
+</body>
 
 
 </html>
